@@ -15,3 +15,8 @@ Esta API espera um contrato de entrada no formato JSON, como no exemplo a seguir
 Para subir a API como localhost, basta ter o maven instalado na máquina.
 Após isso, ir até a pasta do projeto abrir o terminal e rodar o comando:
 	mvn clean install spring-boot:run
+
+Ou é possível fazer isso também, navegando até a pasta target do projeto e executando o comando:
+java -jar back_blog-0.0.1-SNAPSHOT.jar
+
+Vale ressaltar que este arquivo jar é o mesmo que deverá ser utilizado para deploy

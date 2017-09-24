@@ -1,6 +1,6 @@
 package br.com.back.blog.dominio;
 
-import com.sun.istack.internal.NotNull;
+//import com.sun.istack.internal.NotNull;
 
 import javax.persistence.*;
 
@@ -13,19 +13,19 @@ public class Pessoa {
     @Column(name = "id")
     private Long id;
 
-    @NotNull
+    //@NotNull
     @Column(name = "nome")
     private String nome;
 
-    @NotNull
+    //@NotNull
     @Column(name = "ip")
     private String ip;
 
-    @NotNull
+   //@NotNull
     @Column(name = "email")
     private String email;
 
-    @NotNull
+    //@NotNull
     @Column(name = "dataCriacao")
     private String dataCriacao;
 
