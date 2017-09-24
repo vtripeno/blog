@@ -2,6 +2,7 @@ package br.com.back.blog.controller;
 
 import br.com.back.blog.dominio.Pessoa;
 import br.com.back.blog.model.PessoaDao;
+import com.mysql.jdbc.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +21,12 @@ public class PessoaController {
     @RequestMapping("/salvarPessoa")
     @ResponseBody
     public boolean salvarPessoa(@RequestBody Pessoa pessoa) {
+
+        if(StringUtils.isNullOrEmpty(pessoa.getEmail()) ||
+                StringUtils.isNullOrEmpty(pessoa.getNome()) ||
+                StringUtils.isNullOrEmpty(pessoa.getIp()) ) {
+            return false;
+        }
 
         boolean criou;
 
