@@ -20,3 +20,6 @@ Ou é possível fazer isso também, navegando até a pasta target do projeto e e
 java -jar back_blog-0.0.1-SNAPSHOT.jar
 
 Vale ressaltar que este arquivo jar é o mesmo que deverá ser utilizado para deploy
+
+#BASE DE DADOS
+Lembrando que a tabela está na schema pessoa, e configurado para a porta 3306
