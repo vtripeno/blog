@@ -1,0 +1,4 @@
+br/com/back/blog/dominio/Pessoa.class
+br/com/back/blog/controller/PessoaController.class
+br/com/back/blog/BackBlogApplication.class
+br/com/back/blog/model/PessoaDao.class
